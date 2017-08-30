@@ -27,10 +27,10 @@ Beberapa variabel bawaan yang perlu diketahui berkaitan dengan ng-repeat.
 - $odd - Boolean yang menandakan elemen berindeks ganjil
 
 Secara penggunaan tag, directive di AngularJs terbagi menjadi 4, yaitu :
-- Element Directive --> <my-directive></my-directive>
-- Attribute Directive --> <div my-directive></div>
-- Class Directive --> <div class="my-directive"></div>
-- Comment Directive --> <!--directive:my-directive-->
+- Element Directive --> ```<my-directive></my-directive>```
+- Attribute Directive --> ```<div my-directive></div>```
+- Class Directive --> ```<div class="my-directive"></div>```
+- Comment Directive --> ```<!--directive:my-directive-->```
 
 
 # ADDITIONAL
