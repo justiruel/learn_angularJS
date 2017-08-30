@@ -5,13 +5,19 @@
   </head>
   <body ng-app="FirstApp">
 	<div ng-controller="MainController">
-		<b>{{hello}}</b>
+		<b>{{hello}}</b><br/>
+		<b>{{book.title}}</b>
 	</div>
     <script src="js/angular.min.js"></script>
 	<script>
 		var app=angular.module('FirstApp',[]);
 		app.controller('MainController',['$scope', function($scope){
 			$scope.hello="Hello World"; 
+			$scope.book={
+				title: 'Belajar AngularJs Bersama Agung Setiawan',
+				author : 'Agung Setiawan',
+				price  : 80000
+			};
 		}]);
 	</script>
   </body>
