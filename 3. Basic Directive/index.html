@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Belajar AngularJs</title>
+  </head>
+  <body ng-app="FirstApp">
+	<div ng-controller="MainController">
+		<div style="height:100%" ng-repeat="book in books" ng-style="$even == true && {'background-color':'#CE6D8B'} || {'background-color': '#CEBBC9'}">
+		  {{book.title}} </br>
+		  {{book.author}} </br>
+		  {{book.price}} </br>
+		  {{book.pubdate}} </br>
+		  index ke : {{$index}}
+		</div>
+		<button style="float:right; margin-top:1px" ng-click="hai('hello')">click</button>
+		<div style="clear:both"></div>
+		<input style="margin-top:1px" type="text" ng-model="myVar" ng-enter="DoWork()"/>
+	</div>
+    <script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+  </body>
+</html>
